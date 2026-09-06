@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Primary SEO Meta Tags -->
+  <title>Naresh Kumar | Java Full Stack Developer & AI/ML Graduate</title>
+  <meta name="title" content="Naresh Kumar | Java Full Stack Developer & AI/ML Graduate">
+  <meta name="description" content="Portfolio of Naresh Kumar - BE CSE (AI & ML) graduate from AMET University. Java Full Stack Developer and Software Developer with knowledge of Spring Boot, Software Testing, and Machine Learning.">
+  <meta name="keywords" content="Naresh Kumar, Java Developer, Java Full Stack Developer, Software Developer, Spring Boot, Core Java, API Testing, Postman, Swagger, AMET University, Machine Learning, Fresher Portfolio">
+  <meta name="author" content="Naresh Kumar">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nareshkumar.dev/">
+  <meta property="og:title" content="Naresh Kumar | Java Full Stack Developer & AI/ML Graduate">
+  <meta property="og:description" content="Building scalable web applications with Java, Spring Boot, modern frontend technologies, and a strong foundation in software testing.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glowing Background Elements -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-orb ambient-orb-3"></div>
+  </div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Indicator Bar -->
+  <div id="scrollProgressBar" class="scroll-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+
+  <!-- ========================================================================
+       HEADER & STICKY NAVIGATION
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Naresh Kumar Portfolio Home">
+        <span class="brand-tag">&lt;NK</span>
+        <span class="brand-name">/&gt;</span>
+        <span class="brand-sub">Java Developer</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav CTA Buttons -->
+      <div class="nav-actions">
+        <!-- Update href to 'assets/resume/Naresh_Kumar_Resume.pdf' once PDF is added -->
+        <a href="assets/resume/Naresh_Kumar_Resume.pdf" download="Naresh_Kumar_Resume.pdf" class="btn-resume action-download-resume" aria-label="Download Resume PDF">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileToggleBtn" class="mobile-toggle-btn" aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobileNavDrawer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Menu -->
+  <div id="mobileDrawerBackdrop" class="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside id="mobileNavDrawer" class="mobile-nav-drawer" aria-label="Mobile Navigation" role="dialog" aria-modal="true">
+    <div>
+      <div class="mobile-drawer-header">
+        <div class="brand-logo">
+          <span class="brand-tag">&lt;NK /&gt;</span>
+        </div>
+        <button id="mobileCloseBtn" class="mobile-close-btn" aria-label="Close navigation menu">&times;</button>
+      </div>
+      <div class="mobile-links">
+        <a href="#home" class="mobile-nav-link active">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </div>
+    </div>
+    <div style="margin-top: 2rem;">
+      <a href="assets/resume/Naresh_Kumar_Resume.pdf" download="Naresh_Kumar_Resume.pdf" class="btn btn-primary action-download-resume" style="width: 100%;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Download Resume
+      </a>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       HERO SECTION
+       ======================================================================== -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <!-- Hero Content Column -->
+        <div class="hero-content">
+          <div class="hero-badge-container">
+            <span class="status-badge">
+              <span class="pulse-dot"></span>
+              Open to Software Developer, Java Full Stack & QA Roles
+            </span>
+          </div>
+
+          <div class="hero-intro-header">
+            <div class="hero-avatar-pill">
+              <img src="assets/images/profile.jpg" alt="Naresh Kumar" class="hero-avatar-img">
+              <span class="hero-greeting">&lt;Hello, World! I am /&gt;</span>
+            </div>
+          </div>
+          <h1 class="hero-name">Naresh Kumar</h1>
+          <div class="hero-role gradient-text">Java Full Stack Developer | Software Developer | AI/ML Graduate</div>
+          <p class="hero-headline-sub">
+            Building scalable applications with Java, Spring Boot, modern frontend technologies, and a strong foundation in software testing.
+          </p>
+          <p class="hero-intro">
+            BE CSE (AI & ML) graduate from AMET University and a fresher passionate about Java development, full-stack application development, software quality, and machine learning.
+          </p>
+
+          <!-- Action CTA Group -->
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <!-- Resume Download CTA -->
+            <a href="assets/resume/Naresh_Kumar_Resume.pdf" download="Naresh_Kumar_Resume.pdf" class="btn btn-outline action-download-resume">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Technology Badges Chips -->
+          <div class="hero-tech-stack">
+            <span class="tech-stack-label">Core Technical Stack</span>
+            <div class="tech-badges-grid">
+              <span class="tech-chip">Java</span>
+              <span class="tech-chip">Spring Boot</span>
+              <span class="tech-chip">HTML</span>
+              <span class="tech-chip">CSS</span>
+              <span class="tech-chip">JavaScript</span>
+              <span class="tech-chip">SQL</span>
+              <span class="tech-chip">Postman</span>
+              <span class="tech-chip">Swagger</span>
+              <span class="tech-chip">Karate</span>
+              <span class="tech-chip">Cucumber</span>
+              <span class="tech-chip">AI/ML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Featured Developer Portrait Showcase -->
+        <div class="hero-visual-card">
+          <div class="hero-portrait-frame">
+            <div class="hero-portrait-glow"></div>
+            <div class="hero-portrait-img-box">
+              <img src="assets/images/profile.jpg" alt="Naresh Kumar - Java Full Stack Developer" class="hero-portrait-img">
+            </div>
+
+            <!-- Floating Badge: Experience/Status -->
+            <div class="hero-float-tag float-tag-top">
+              <span class="float-tag-icon">⚡</span>
+              <div>
+                <div class="float-tag-title">Java Full Stack</div>
+                <div class="float-tag-sub">Developer &amp; Tester</div>
+              </div>
+            </div>
+
+            <!-- Floating Badge: Specialization -->
+            <div class="hero-float-tag float-tag-bottom">
+              <div class="stat-icon-wrapper">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div>
+                <div class="float-tag-title">BE CSE (AI &amp; ML)</div>
+                <div class="float-tag-sub">AMET University</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ABOUT ME SECTION
+       ======================================================================== -->
+  <section id="about" class="reveal-on-scroll">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">About Me</span>
+        <h2 class="section-title">Passionate Developer with an Analytical Mindset</h2>
+        <p class="section-description">
+          A dedicated software engineer with a strong foundation in Java programming, web technologies, machine learning concepts, and software quality assurance.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Narrative Column -->
+        <div class="about-narrative">
+          <p class="about-text-lead">
+            I am <strong>Naresh Kumar</strong>, a BE Computer Science and Engineering graduate specializing in <strong>Artificial Intelligence & Machine Learning</strong> from <strong>AMET University</strong>. As a fresher, I am building my career in software development with a strong focus on Java and full-stack development, while also developing skills in software testing and API testing.
+          </p>
+
+          <p class="about-text-body">
+            Currently, I am strengthening my Core Java fundamentals, learning Spring Boot and frontend development, and gaining practical exposure to API testing tools such as Postman and Swagger.
+          </p>
+
+          <p class="about-text-body">
+            My engineering coursework in AI & Machine Learning taught me systematic data-driven problem solving and algorithm design. I believe in writing structured, readable, and defensive code backed by robust edge-case validation and clean object-oriented architecture.
+          </p>
+
+          <!-- Core Pillars -->
+          <div class="about-pillars">
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                  <polyline points="2 17 12 22 22 17"></polyline>
+                  <polyline points="2 12 12 17 22 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Full-Stack Vision</h3>
+              <p class="pillar-desc">Connecting responsive frontend interfaces to resilient Spring Boot REST endpoints and relational schemas.</p>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h3 class="pillar-title">Quality & Testing</h3>
+              <p class="pillar-desc">Approaching software with attention to functional correctness, API contracts, boundary limits, and clean debugging.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Information Card -->
+        <div class="profile-card">
+          <div class="profile-card-header">
+            <div class="profile-avatar-wrapper">
+              <img src="assets/images/profile.jpg" alt="Naresh Kumar" class="profile-avatar-img">
+              <div class="profile-avatar-badge">
+                <span class="pulse-dot"></span> Available
+              </div>
+            </div>
+            <div class="profile-header-meta">
+              <h3 class="profile-user-name">Naresh Kumar</h3>
+              <p class="profile-user-role">Java Full Stack &amp; Software Developer</p>
+              <div class="profile-quick-tags">
+                <span class="tag-mini">BE CSE (AI/ML)</span>
+                <span class="tag-mini">QSpiders Certified</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-info-list">
+            <div class="profile-info-item">
+              <span class="info-label">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                Name
+              </span>
+              <span class="info-value">Naresh Kumar</span>
+            </div>
+
+            <div class="profile-info-item">
+              <span class="info-label">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                Degree
+              </span>
+              <span class="info-value">BE CSE – AI & ML</span>
+            </div>
+
+            <div class="profile-info-item">
+              <span class="info-label">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                University
+              </span>
+              <span class="info-value">AMET University</span>
+            </div>
+
+            <div class="profile-info-item">
+              <span class="info-label">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Experience
+              </span>
+              <span class="info-value info-tag">Fresher</span>
+            </div>
+
+            <div class="profile-info-item">
+              <span class="info-label">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                Primary Interest
+              </span>
+              <span class="info-value" style="color: var(--accent-blue);">Java Full Stack Development</span>
+            </div>
+
+            <div class="profile-info-item">
+              <span class="info-label">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                Additional Interest
+              </span>
+              <span class="info-value" style="color: var(--accent-emerald);">Software Testing / QA</span>
+            </div>
+
+            <div class="profile-info-item">
+              <span class="info-label">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                Domain
+              </span>
+              <span class="info-value">Software Development & AI/ML</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       TECHNICAL SKILLS SECTION
+       ======================================================================== -->
+  <section id="skills" class="reveal-on-scroll">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">Technical Competencies</span>
+        <h2 class="section-title">Skills & Capabilities</h2>
+        <p class="section-description">
+          Organized by domain, reflecting practical learning, coursework, and problem-solving practice without artificial percentage metrics.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Backend Development -->
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon icon-backend">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <div class="skill-card-title">
+              <h3>Backend Development</h3>
+              <p>Core Java & Frameworks</p>
+            </div>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-tag highlight">Java</span>
+            <span class="skill-tag highlight">Core Java</span>
+            <span class="skill-tag highlight">OOP</span>
+            <span class="skill-tag highlight">Collections</span>
+            <span class="skill-tag highlight">Exception Handling</span>
+            <span class="skill-tag highlight">String Handling</span>
+            <span class="skill-tag highlight">Spring Boot</span>
+            <span class="skill-tag">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Frontend Development -->
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon icon-frontend">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="skill-card-title">
+              <h3>Frontend Development</h3>
+              <p>Web Interface & Presentation</p>
+            </div>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-tag highlight">HTML</span>
+            <span class="skill-tag highlight">CSS</span>
+            <span class="skill-tag highlight">JavaScript</span>
+            <span class="skill-tag">Responsive Web Design</span>
+            <span class="skill-tag">DOM Fundamentals</span>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon icon-database">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <div class="skill-card-title">
+              <h3>Database</h3>
+              <p>Relational Schemas & Queries</p>
+            </div>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-tag highlight">SQL</span>
+            <span class="skill-tag highlight">MySQL</span>
+            <span class="skill-tag highlight">CRUD Queries</span>
+            <span class="skill-tag highlight">Primary & Foreign Keys</span>
+            <span class="skill-tag">Database Fundamentals</span>
+          </div>
+        </div>
+
+        <!-- Testing & API -->
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon icon-testing">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <polyline points="9 15 11 17 15 13"></polyline>
+              </svg>
+            </div>
+            <div class="skill-card-title">
+              <h3>Testing & API</h3>
+              <p>Manual & Contract Validation</p>
+            </div>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-tag highlight">Manual Testing</span>
+            <span class="skill-tag">Functional Testing</span>
+            <span class="skill-tag">Test Case Design</span>
+            <span class="skill-tag">Regression Testing</span>
+            <span class="skill-tag highlight">API Testing</span>
+            <span class="skill-tag highlight">Postman</span>
+            <span class="skill-tag highlight">Swagger</span>
+            <span class="skill-tag">HTTP Methods</span>
+            <span class="skill-tag">JSON</span>
+            <span class="skill-tag">Status Codes</span>
+          </div>
+        </div>
+
+        <!-- Automation / BDD -->
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon icon-automation">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              </svg>
+            </div>
+            <div class="skill-card-title">
+              <h3>Automation / BDD</h3>
+              <p>Scenario-Driven Verification</p>
+            </div>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-tag highlight">Karate</span>
+            <span class="skill-tag highlight">Cucumber</span>
+            <span class="skill-tag">Gherkin Syntax</span>
+            <span class="skill-tag">API Automation Concepts</span>
+            <span class="skill-tag">BDD Scenarios</span>
+          </div>
+        </div>
+
+        <!-- AI & Machine Learning -->
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon icon-aiml">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+              </svg>
+            </div>
+            <div class="skill-card-title">
+              <h3>AI & Machine Learning</h3>
+              <p>Specialized Degree Foundation</p>
+            </div>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-tag highlight">Machine Learning</span>
+            <span class="skill-tag highlight">AI/ML Fundamentals</span>
+            <span class="skill-tag highlight">Classification</span>
+            <span class="skill-tag highlight">Data Preprocessing</span>
+            <span class="skill-tag highlight">Gradient Boosting</span>
+            <span class="skill-tag highlight">Python</span>
+          </div>
+        </div>
+
+        <!-- Core Java Problem Solving (Technical Competencies Callout) -->
+        <div class="skill-category-card problem-solving-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon icon-problem">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+            </div>
+            <div class="skill-card-title">
+              <h3>Core Java Problem Solving</h3>
+              <p>Algorithms, Data Structures & Logic Building</p>
+            </div>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-tag highlight">Arrays</span>
+            <span class="skill-tag highlight">Strings</span>
+            <span class="skill-tag highlight">Collection Frameworks</span>
+            <span class="skill-tag highlight">Sorting</span>
+            <span class="skill-tag highlight">Searching</span>
+            <span class="skill-tag highlight">Basic Data Structure Algorithms</span>
+          </div>
+        </div>
+
+        <!-- Quality Mindset (Compact Skills Integration) -->
+        <div class="skill-category-card quality-mindset-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon icon-quality">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <div class="skill-card-title">
+              <h3>Quality Mindset</h3>
+              <p>Engineering Reliability & Defect Prevention</p>
+            </div>
+          </div>
+          <div class="skill-tags-list">
+            <span class="skill-tag highlight">Functional Correctness</span>
+            <span class="skill-tag highlight">API & Payload Validation</span>
+            <span class="skill-tag highlight">Structured Test Cases</span>
+            <span class="skill-tag highlight">Edge Cases & Boundary Analysis</span>
+            <span class="skill-tag highlight">Graceful Error Handling</span>
+            <span class="skill-tag highlight">Regression Awareness</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PROJECTS SECTION
+       ======================================================================== -->
+  <section id="projects" class="reveal-on-scroll">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">Featured Work</span>
+        <h2 class="section-title">Projects & Practical Applications</h2>
+        <p class="section-description">
+          Meaningful software projects highlighting machine learning classification, full-stack application structure, and hands-on API testing.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- PROJECT 1: Disease Prediction with Context-Aware Drug Recommendation (ML + RAG) -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <div class="project-meta-row">
+              <span class="project-category-pill pill-ml">ML &amp; Generative AI</span>
+              <span style="font-size: 0.75rem; color: #64748b; font-family: var(--font-mono);">BE Final Year Project</span>
+            </div>
+            <h3 class="project-title">Disease Prediction with Context-Aware Drug Recommendation Using RAG-Based Language Models</h3>
+          </div>
+
+          <div class="project-card-body">
+            <p class="project-desc">
+              A hybrid healthcare decision support system integrating supervised Machine Learning for accurate symptom-based disease classification with Retrieval-Augmented Generation (RAG) and LLMs for grounded medical recommendations.
+            </p>
+
+            <div class="project-highlights-group">
+              <h4>Key Project Highlights</h4>
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Multi-class classification across 41 disease groups using Gradient Boosting (132 symptom features)</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Retrieval-Augmented Generation (RAG) using LangChain &amp; FAISS vector database with MiniLM embeddings</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Context-grounded medical advice: medications, dietary plans, precautions, and workout guidelines</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Integrated interactive medical assistant chatbot with hallucination minimization &amp; medical disclaimers</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Research paper submitted to International Journal for Multidisciplinary Research (IJFMR)</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="project-tech-badge">Python</span>
+              <span class="project-tech-badge">Gradient Boosting</span>
+              <span class="project-tech-badge">LangChain</span>
+              <span class="project-tech-badge">RAG / LLM</span>
+              <span class="project-tech-badge">FAISS Vector DB</span>
+              <span class="project-tech-badge">HuggingFace Embeddings</span>
+              <span class="project-tech-badge">Scikit-Learn</span>
+            </div>
+          </div>
+
+          <div class="project-card-footer">
+            <div class="project-links">
+              <!-- Replace with actual repository link when available -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>Code Repository</span>
+              </a>
+            </div>
+            <span style="font-size: 0.78rem; color: #94a3b8; font-family: var(--font-mono);">ML + RAG / GenAI</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: Full Stack Java Application (Modular Template Structure) -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <div class="project-meta-row">
+              <span class="project-category-pill pill-fullstack">Java Full Stack</span>
+              <span style="font-size: 0.75rem; color: #64748b; font-family: var(--font-mono);">Application Build</span>
+            </div>
+            <h3 class="project-title">Full Stack Java Application</h3>
+          </div>
+
+          <div class="project-card-body">
+            <p class="project-desc">
+              End-to-end full-stack web application designed with Spring Boot REST services, responsive frontend components, and MySQL relational persistence.
+            </p>
+
+            <div class="project-highlights-group">
+              <h4>Structured Architecture & Features</h4>
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Interactive User Interface (HTML, CSS, JavaScript)</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>REST API integration and structured CRUD operations</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Spring Boot backend services with dependency injection</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>MySQL database connectivity & client/server form validation</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="project-tech-badge">Java</span>
+              <span class="project-tech-badge">Spring Boot</span>
+              <span class="project-tech-badge">REST API</span>
+              <span class="project-tech-badge">MySQL</span>
+              <span class="project-tech-badge">HTML / CSS / JS</span>
+            </div>
+          </div>
+
+          <div class="project-card-footer">
+            <div class="project-links">
+              <!-- Replace with actual repository link when available -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>Code Repository</span>
+              </a>
+            </div>
+            <span style="font-size: 0.78rem; color: #94a3b8; font-family: var(--font-mono);">Full-Stack</span>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: API Testing & Validation (Practice Portfolio) -->
+        <article class="project-card">
+          <div class="project-card-header">
+            <div class="project-meta-row">
+              <span class="project-category-pill pill-testing">QA & API Testing</span>
+              <span style="font-size: 0.75rem; color: #64748b; font-family: var(--font-mono);">Hands-On Practice</span>
+            </div>
+            <h3 class="project-title">API Testing & Validation</h3>
+          </div>
+
+          <div class="project-card-body">
+            <p class="project-desc">
+              Hands-on learning and practice with API testing using Swagger and Postman to ensure reliable service communication and payload compliance.
+            </p>
+
+            <div class="project-highlights-group">
+              <h4>Testing Coverage & Practices</h4>
+              <ul class="project-highlights-list">
+                <li class="project-highlight-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Verification of HTTP Methods: GET, POST, PUT, DELETE</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>HTTP status code assertions (200, 201, 400, 404, 500)</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Request/response validation and JSON schema checks</span>
+                </li>
+                <li class="project-highlight-item">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Systematic API test case design & boundary inspection</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="project-tech-tags">
+              <span class="project-tech-badge">Postman</span>
+              <span class="project-tech-badge">Swagger</span>
+              <span class="project-tech-badge">JSON</span>
+              <span class="project-tech-badge">REST APIs</span>
+              <span class="project-tech-badge">Test Cases</span>
+            </div>
+          </div>
+
+          <div class="project-card-footer">
+            <div class="project-links">
+              <!-- Replace with actual repository link when available -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>Test Collections</span>
+              </a>
+            </div>
+            <span style="font-size: 0.78rem; color: #94a3b8; font-family: var(--font-mono);">QA Practice</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       EDUCATION SECTION
+       ======================================================================== -->
+  <section id="education" class="reveal-on-scroll">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">Academic Foundation</span>
+        <h2 class="section-title">Education</h2>
+        <p class="section-description">
+          Formal engineering background combining computer science fundamentals with specialized training in Artificial Intelligence and Machine Learning.
+        </p>
+      </div>
+
+      <div class="education-timeline">
+        <!-- 1. Java Full Stack Training -->
+        <div class="timeline-item">
+          <div class="timeline-bullet">
+            <div class="bullet-inner"></div>
+          </div>
+          <div class="timeline-card">
+            <h3 class="edu-degree">Java Full Stack Development Training</h3>
+            <div class="edu-institution">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              <span>QSpiders, Chrompet</span>
+            </div>
+            <p class="edu-desc">
+              Comprehensive professional training in <strong>Core Java</strong>, Object-Oriented Programming (OOP), Collections Framework, Exception Handling, <strong>Spring Boot</strong> REST APIs, Database Management with <strong>SQL / MySQL</strong>, <strong>Web Development</strong> (HTML, CSS, JavaScript), and <strong>Manual &amp; API Testing</strong> using Postman &amp; Swagger.
+            </p>
+            <div class="edu-curriculum-tags">
+              <span class="skill-tag highlight">Core Java</span>
+              <span class="skill-tag highlight">Spring Boot</span>
+              <span class="skill-tag highlight">SQL / MySQL</span>
+              <span class="skill-tag highlight">Web Development</span>
+              <span class="skill-tag highlight">API Testing (Postman/Swagger)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Bachelor of Engineering (BE CSE - AI & ML) -->
+        <div class="timeline-item">
+          <div class="timeline-bullet">
+            <div class="bullet-inner"></div>
+          </div>
+          <div class="timeline-card">
+            <h3 class="edu-degree">Bachelor of Engineering in Computer Science &amp; Engineering</h3>
+            <div class="edu-institution">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              <span>AMET University</span>
+            </div>
+            <p class="edu-desc">
+              Specialized in <strong>Artificial Intelligence &amp; Machine Learning</strong>. Coursework provided in-depth exposure to Object-Oriented Programming, Data Structures &amp; Algorithms, Database Management Systems, Software Engineering methodologies, and Machine Learning classification models.
+            </p>
+            <div class="edu-curriculum-tags">
+              <span class="skill-tag highlight">AI &amp; Machine Learning</span>
+              <span class="skill-tag">Data Structures &amp; Algorithms</span>
+              <span class="skill-tag">DBMS (SQL)</span>
+              <span class="skill-tag">OOP Fundamentals</span>
+              <span class="skill-tag">Software Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Higher Secondary Certificate (12th Grade) -->
+        <div class="timeline-item">
+          <div class="timeline-bullet">
+            <div class="bullet-inner"></div>
+          </div>
+          <div class="timeline-card">
+            <h3 class="edu-degree">Higher Secondary Certificate (HSC – 12th Grade)</h3>
+            <div class="edu-institution">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              <span>Sri Ramakrishna Matriculation Higher Secondary School, Tambaram</span>
+            </div>
+            <p class="edu-desc">
+              Completed Higher Secondary Education focusing on foundational Science and Mathematics curricula, establishing strong analytical and logical reasoning skills.
+            </p>
+            <div class="edu-curriculum-tags">
+              <span class="skill-tag">Higher Secondary Education</span>
+              <span class="skill-tag">Mathematics &amp; Science</span>
+              <span class="skill-tag">Analytical Foundation</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Secondary School Leaving Certificate (10th Grade) -->
+        <div class="timeline-item">
+          <div class="timeline-bullet">
+            <div class="bullet-inner"></div>
+          </div>
+          <div class="timeline-card">
+            <h3 class="edu-degree">Secondary School Leaving Certificate (SSLC – 10th Grade)</h3>
+            <div class="edu-institution">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              <span>Sri Ramakrishna Matriculation Higher Secondary School, Tambaram</span>
+            </div>
+            <p class="edu-desc">
+              Completed secondary schooling with a solid academic base in mathematics, science, and computer fundamentals.
+            </p>
+            <div class="edu-curriculum-tags">
+              <span class="skill-tag">Secondary Education</span>
+              <span class="skill-tag">Basic Science &amp; Math</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       RESUME & CALL TO ACTION BANNER
+       ======================================================================== -->
+  <section class="resume-banner-section reveal-on-scroll">
+    <div class="container">
+      <div class="resume-banner-card">
+        <div class="resume-banner-content">
+          <h2 class="banner-title">Let's Build Something Great</h2>
+          <p class="banner-subtitle">
+            Looking for a motivated fresher with a foundation in Java, Full Stack Development, AI/ML and Software Quality? I am actively seeking full-time opportunities and ready to contribute from day one.
+          </p>
+          <div class="banner-actions">
+            <!-- Update href to 'assets/resume/Naresh_Kumar_Resume.pdf' once PDF is added -->
+            <a href="assets/resume/Naresh_Kumar_Resume.pdf" download="Naresh_Kumar_Resume.pdf" class="btn btn-primary action-download-resume">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Contact Me</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CONTACT SECTION
+       ======================================================================== -->
+  <section id="contact" class="reveal-on-scroll">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-pill">Get In Touch</span>
+        <h2 class="section-title">Connect with Naresh</h2>
+        <p class="section-description">
+          Whether you have an entry-level opening, an opportunity for interview, or a technical inquiry, I welcome the chance to speak.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Channels Info Column -->
+        <div class="contact-info-col">
+          <!-- Email Card -->
+          <a href="mailto:nareshchan4@gmail.com" class="contact-direct-card">
+            <div class="contact-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-meta">
+              <h4>Email Inquiry</h4>
+              <p>nareshchan4@gmail.com</p>
+            </div>
+          </a>
+
+          <!-- Phone / WhatsApp Number Card -->
+          <a href="https://wa.me/919940171486" target="_blank" rel="noopener noreferrer" class="contact-direct-card">
+            <div class="contact-card-icon" style="background: rgba(37, 211, 102, 0.15); color: #25d366;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+            </div>
+            <div class="contact-meta">
+              <h4>WhatsApp / Phone</h4>
+              <p>+91 99401 71486</p>
+            </div>
+          </a>
+
+          <!-- LinkedIn Card -->
+          <a href="https://www.linkedin.com/in/naresh-kumar-gajendiran-6230b6266" target="_blank" rel="noopener noreferrer" class="contact-direct-card">
+            <div class="contact-card-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </div>
+            <div class="contact-meta">
+              <h4>LinkedIn Profile</h4>
+              <p>in/naresh-kumar-gajendiran-6230b6266</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Recruiter Name" required autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="e.g. recruiter@company.com" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Java Developer Role Interview" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Write your message or inquiry here..." required></textarea>
+            </div>
+
+            <!-- Form Status Alert -->
+            <div id="formStatus" class="form-status" role="alert"></div>
+
+            <button type="submit" id="contactSubmitBtn" class="btn btn-primary" style="width: 100%; gap: 0.65rem;">
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+              </svg>
+              <span>Send Message to WhatsApp</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="brand-logo">
+          <span class="brand-tag">&lt;NK</span>
+          <span class="brand-name">/&gt;</span>
+          <span style="margin-left: 0.4rem; font-size: 1.05rem;">Naresh Kumar</span>
+        </div>
+        <p>Java Full Stack Developer | Software Developer | BE CSE (AI & ML), AMET University</p>
+      </div>
+
+      <div class="footer-social-links">
+        <a href="https://www.linkedin.com/in/naresh-kumar-gajendiran-6230b6266" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="GitHub Profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <!-- Copy Email Action Button -->
+        <button class="social-icon-btn action-copy-email" data-email="nareshchan4@gmail.com" aria-label="Copy Email Address" style="cursor: pointer;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Floating Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Scroll back to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="12" y1="19" x2="12" y2="5"></line>
+      <polyline points="5 12 12 5 19 12"></polyline>
+    </svg>
+  </button>
+
+  <!-- Main JavaScript File -->
+  <script src="js/app.js"></script>
+</body>
+</html>
