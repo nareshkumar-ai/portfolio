@@ -256,7 +256,7 @@ function initResumeToast() {
         e.preventDefault();
         showToast('Resume link placeholder. Add your PDF file to assets/resume/ to enable direct download!');
       } else {
-        showToast('Initiating resume download for Naresh Kumar...');
+        showToast('Initiating resume download for Naresh Kumar G...');
       }
     });
   });
@@ -266,7 +266,7 @@ function initResumeToast() {
   copyEmailButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      const email = btn.getAttribute('data-email') || 'nareshchan4@gmail.com';
+      const email = btn.getAttribute('data-email') || 'nkpraabi2101@gmail.com';
       navigator.clipboard.writeText(email).then(() => {
         showToast(`Email copied to clipboard: ${email}`);
       }).catch(() => {
